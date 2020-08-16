@@ -30,8 +30,8 @@ class PGSignInActivity : AppCompatActivity() {
         setContentView(R.layout.activity_p_g_sign_in)
 
         val sharedPreferences = getSharedPreferences("999", Context.MODE_PRIVATE)
-        pg_email_et_signin.setText(sharedPreferences.getString("owneremail", "EMAIL"))
-        pg_password_et_signin.setText(sharedPreferences.getString("password", "PASSWORD"))
+        pg_email_et_signin.setText(sharedPreferences.getString("owneremail", ""))
+        pg_password_et_signin.setText(sharedPreferences.getString("password", ""))
 
         pg_login_btn.setOnClickListener {
             if (pg_email_et_signin.text.toString().isNotEmpty()) {
