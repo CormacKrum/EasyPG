@@ -68,7 +68,7 @@
         android:layout_below="@id/email_input_layout"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:text="PassWord"
+        android:text="Password"
         android:textSize="17dp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -79,6 +79,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         app:boxStrokeColor="@color/DodgerBlue"
+        app:passwordToggleEnabled="true"
         app:hintTextColor="@color/DodgerBlue">
 
         <com.google.android.material.textfield.TextInputEditText
