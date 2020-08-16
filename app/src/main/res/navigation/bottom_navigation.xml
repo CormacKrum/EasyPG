@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@+id/bottom_navigation_home">
+
+    <fragment
+        android:id="@+id/bottom_navigation_home"
+        android:name="udit.programmer.co.easypg.RootFragments.BottomFragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/bottom_navigation_search"
+        android:name="udit.programmer.co.easypg.RootFragments.BottomFragments.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/bottom_navigation_profile"
+        android:name="udit.programmer.co.easypg.RootFragments.BottomFragments.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_favourites"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.FavouritesFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_favourites" />
+
+    <fragment
+        android:id="@+id/nav_web"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.WebFragment"
+        android:label="Web"
+        tools:layout="@layout/fragment_web" />
+
+    <fragment
+        android:id="@+id/nav_saved_msg"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.SavedChatFragment"
+        android:label="Saved Chat"
+        tools:layout="@layout/fragment_saved_chat" />
+
+    <fragment
+        android:id="@+id/nav_invite"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.InviteFragment"
+        android:label="Invite"
+        tools:layout="@layout/fragment_invite" />
+
+    <fragment
+        android:id="@+id/nav_user_guide"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.UserGuideFragment"
+        android:label="User Guide"
+        tools:layout="@layout/fragment_user_guide" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.FeedbackFragment"
+        android:label="Feedback"
+        tools:layout="@layout/fragment_feedback" />
+
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.ContactUsFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="udit.programmer.co.easypg.RootFragments.SideFragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

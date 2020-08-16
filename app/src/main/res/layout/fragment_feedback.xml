@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/White"
+    tools:context=".RootFragments.SideFragments.FeedbackFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fav_animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/White"
+        android:defaultFocusHighlightEnabled="true"
+        android:scaleType="fitCenter"
+        android:soundEffectsEnabled="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="feedback.json"
+        app:lottie_loop="true" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/feedback_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fav_animation_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:hint="Please give us your vauable feedback :)"
+        android:textAlignment="textStart"
+        android:textColor="@color/RoyalBlue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/rating_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback_et"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:fontFamily="serif-monospace"
+        android:text="Rate us at Play Store"
+        android:textAlignment="center"
+        android:textColor="@color/RoyalBlue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/version_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="serif-monospace"
+        android:text="Version 0.0.1"
+        android:textAlignment="center"
+        android:textColor="@color/Blue"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EasyPG</string>
+
+    <!--    <string name="facebook_application_id" translatable="false">781071616014715</string>-->
+    <!--    <string name="facebook_login_protocol_scheme" translatable="false">fb781071616014715</string>-->
+    <!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoidWRpdGphaW4xMDAiLCJhIjoiY2tjM21odzJoMTN6YTJybGZ3Y21hNmUybyJ9.j_BjCEd8MUiFY_A9hA-phQ</string>
+
+</resources>

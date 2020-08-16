@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".RootFragments.SideFragments.UserGuideFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/terms_tv"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_code_24"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:text="Terms and Conditions"
+                android:textAllCaps="false"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/faq_tv"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_contact_support_24"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:text="FAQs"
+                android:textAllCaps="false"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/help_tv"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_live_help_24"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:text="Help"
+                android:textAllCaps="false"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/partner_tv"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_sports_handball_24"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:text="Partnership"
+                android:textAllCaps="false"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/privacy_tv"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_cancel_24"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:text="Privacy Policy"
+                android:textAllCaps="false"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/contact_tv"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:drawableEnd="@drawable/ic_baseline_contact_phone_24"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:text="Direct Contact"
+                android:textAllCaps="false"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

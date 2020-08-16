@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customer_sign_up_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Lavender"
+    tools:context=".SignUpActivities.Customer.CustomerSignUp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif-monospace"
+                android:text="Details"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="casual"
+                android:text="Please Enter your details :)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Name"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Name Here"
+                    android:inputType="textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/gender_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Gender"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/gender_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/male_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/female_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/others_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Others"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fatherName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Father Name"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fatherName_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fatherName_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Father Name Here"
+                    android:inputType="textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/motherName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Mother Name"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/motherName_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/motherName_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Mother Name Here"
+                    android:inputType="textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fatherMobileNumber_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Father Mobile Number"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fatherMobileNumber_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fatherMobileNumber_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Father Number Here"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dob_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Date of Birth"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dob_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dob_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_baseline_date_range_24"
+                    android:drawablePadding="8dp"
+                    android:focusable="false"
+                    android:gravity="start"
+                    android:hint="Set Date"
+                    android:padding="8dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mobileNumber_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Mobile Number"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobileNumber_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mobileNumber_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Number Here"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Address"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/address_spinner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/state_searchable_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search State Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/district_searchable_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search District Here" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pinCode_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PinCode"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pinCode_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pinCode_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Pincode Here"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            Address DropDown-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/address_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Address Here"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Email"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Email Here"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/userName_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Username"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/userName_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userName_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Username Here"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/passWord_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PassWord"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passWord_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passWord_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter PassWord Here"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/password_image_eye"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@color/Lavender"
+                    android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/college_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="College"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/college_searchable_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/Blue"
+                android:textColor="@color/DodgerBlue"
+                app:hintText="Search Here" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/DodgerBlue"
+                android:fontFamily="serif-monospace"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="25dp"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/LightBlue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/otp_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="OTP"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/otp_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/otp_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter OTP Here"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp"
+                    android:visibility="invisible" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/DodgerBlue"
+                android:fontFamily="serif-monospace"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="25dp"
+                android:visibility="invisible"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/LightBlue" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

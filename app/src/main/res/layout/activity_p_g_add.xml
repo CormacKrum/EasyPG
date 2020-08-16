@@ -1,0 +1,2608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pg_add_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Lavender"
+    tools:context=".SignUpActivities.PG.PGAddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif-monospace"
+                android:text="PG Details"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="casual"
+                android:text="Please Enter PG details :)"
+                android:textAlignment="viewStart"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pg_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PG Name"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pg_name_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pg_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter PG Name Here"
+                    android:inputType="textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pgType_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PG Type"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/pgType_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/malePg_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/femalePg_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/bothPg_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Both"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/messAvailable_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Mess Available"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/messAvailable_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/yesMess_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/noMess_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/liftAvailable_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Lift Available"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/liftAvailable_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/yesLift_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/noLift_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pg_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PG Address"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pg_address_spinner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/pg_state_searchable_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search State Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/pg_district_searchable_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search District Here" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pg_pinCode_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PinCode"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pg_pinCode_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pg_pinCode_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Pincode Here"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pg_address_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pg_address_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Address Here"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/room_description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Room Description"
+                android:textAlignment="center"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/type1_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Type 1"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfPersonsPerRoom1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Persons per Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfRooms1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfPersonsPerRoom1_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfRooms1_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfACRooms1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfNonAcRooms1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Non AC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfACRooms1_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfNonACRooms1_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableACRooms1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableNonACRooms1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available NonAC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableACRooms1_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableNonACRooms1_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithoutMess1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithoutMess1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithoutMess1_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithoutMess1_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithoutMess1_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithoutMess1_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithMess1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithMess1_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithMess1_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithMess1_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithMess1_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithMess1_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/type2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Type 2"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfPersonsPerRoom2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Persons per Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfRooms2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfPersonsPerRoom2_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfRooms2_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfACRooms2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfNonAcRooms2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Non AC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfACRooms2_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfNonACRooms2_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableACRooms2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableNonACRooms2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available NonAC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableACRooms2_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableNonACRooms2_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithoutMess2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithoutMess2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithoutMess2_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithoutMess2_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithoutMess2_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithoutMess2_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithMess2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithMess2_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithMess2_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithMess2_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithMess2_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithMess2_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/type3_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Type 3"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfPersonsPerRoom3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Persons per Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfRooms3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfPersonsPerRoom3_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfRooms3_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfACRooms3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfNonAcRooms3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Non AC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfACRooms3_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfNonACRooms3_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableACRooms3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableNonACRooms3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available NonAC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableACRooms3_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableNonACRooms3_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithoutMess3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithoutMess3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithoutMess3_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithoutMess3_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithoutMess3_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithoutMess3_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithMess3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithMess3_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithMess3_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithMess3_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithMess3_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithMess3_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/type4_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Type 4"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfPersonsPerRoom4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Persons per Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfRooms4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfPersonsPerRoom4_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfRooms4_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfACRooms4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfNonAcRooms4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Non AC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfACRooms4_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfNonACRooms4_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableACRooms4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableNonACRooms4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available NonAC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableACRooms4_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableNonACRooms4_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithoutMess4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithoutMess4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithoutMess4_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithoutMess4_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithoutMess4_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithoutMess4_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithMess4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithMess4_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithMess4_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithMess4_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithMess4_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithMess4_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/type5_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Type 5"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfPersonsPerRoom5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Persons per Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfRooms5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfPersonsPerRoom5_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfRooms5_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfACRooms5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfNonAcRooms5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Non AC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfACRooms5_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfNonACRooms5_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableACRooms5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available AC Room"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/noOfAvailableNonACRooms5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Number of Available NonAC Rooms"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableACRooms5_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/noOfAvailableNonACRooms5_searchable_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search Here" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithoutMess5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithoutMess5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms Without Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithoutMess5_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithoutMess5_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithoutMess5_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithoutMess5_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfACRoomsWithMess5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of AC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/rentOfNonACRoomsWithMess5_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="Rent Of NonAC Rooms With Mess"
+                    android:textAlignment="center"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfACRoomsWithMess5_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfACRoomsWithMess5_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rentOfNonACRoomsWithMess5_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rentOfNonACRoomsWithMess5_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter Rent Here"
+                        android:inputType="number"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Qwner Name"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/owner_name_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/owner_name_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Name Here"
+                    android:inputType="textCapWords"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_gender_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Owner Gender"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/owner_gender_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/owner_male_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/owner_female_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Female"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/owner_others_radio_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Others"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/DodgerBlue"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_dob_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Date of Birth"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/owner_dob_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/owner_dob_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/ic_baseline_date_range_24"
+                    android:drawablePadding="8dp"
+                    android:focusable="false"
+                    android:gravity="start"
+                    android:hint="Set Date"
+                    android:padding="8dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_mobileNumber_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Mobile Number"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/owner_mobileNumber_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/owner_mobileNumber_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Number Here"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Address"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/owner_address_spinner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/owner_state_searchable_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search State Here" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/owner_district_searchable_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/Blue"
+                    android:textColor="@color/DodgerBlue"
+                    app:hintText="Search District Here" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_pinCode_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PinCode"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/owner_pinCode_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/owner_pinCode_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Pincode Here"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/owner_address_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/owner_address_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Address Here"
+                    android:inputType="textMultiLine"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Email"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/owner_email_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/owner_email_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter Email Here"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/owner_passWord_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="PassWord"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/owner_passWord_input_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    app:boxStrokeColor="@color/DodgerBlue"
+                    app:hintTextColor="@color/DodgerBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/owner_passWord_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Enter PassWord Here"
+                        android:inputType="textPassword"
+                        android:padding="5dp"
+                        android:textColor="@color/DodgerBlue"
+                        android:textSize="18dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/owner_password_image_eye"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:background="@color/Lavender"
+                    android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nearest_college_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Nearest College"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/nearest_college_searchable_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/Blue"
+                android:textColor="@color/DodgerBlue"
+                app:hintText="Search Here" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pg_register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/DodgerBlue"
+                android:fontFamily="serif-monospace"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="25dp"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/LightBlue" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pg_otp_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="OTP"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pg_otp_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="invisible"
+                app:boxStrokeColor="@color/DodgerBlue"
+                app:hintTextColor="@color/DodgerBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pg_otp_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Enter OTP Here"
+                    android:padding="5dp"
+                    android:textColor="@color/DodgerBlue"
+                    android:textSize="18dp"
+                    android:visibility="invisible" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pg_submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/DodgerBlue"
+                android:fontFamily="serif-monospace"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="25dp"
+                android:visibility="invisible"
+                app:cornerRadius="10dp"
+                app:rippleColor="@color/LightBlue" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

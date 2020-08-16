@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="@color/LightBlue"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/nav_customer_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/ic_baseline_perm_identity_24" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nav_customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="casual"
+        android:text="Name"
+        android:textAlignment="viewStart"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nav_customer_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:text="UserName"
+        android:textAlignment="viewStart"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+</LinearLayout>

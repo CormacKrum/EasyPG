@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/White"
+    tools:context=".RootFragments.SideFragments.ContactUsFragment">
+
+    <ImageView
+        android:id="@+id/icon_contactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/contactus_logo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_contactUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon_contactUs"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="You can reach us through :)"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/RoyalBlue"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_contactUs"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/mobile_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/phone"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Mobile"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/whatsapp_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/whatsapp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="WhatsApp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/instagram_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/instagram"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Instagram"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/facebook_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/facebook"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Facebook"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/linkedin_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/linkedin"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Linkedin"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/email_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/email"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/twitter_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/twitter"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Twitter"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/youtube_contactUs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:drawableStart="@drawable/youtube"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:text="Youtube"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

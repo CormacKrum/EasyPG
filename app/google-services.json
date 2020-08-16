@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1072990753694",
+    "firebase_url": "https://easypg-dcbbb.firebaseio.com",
+    "project_id": "easypg-dcbbb",
+    "storage_bucket": "easypg-dcbbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072990753694:android:15a9d2303de7b2b4fffc8f",
+        "android_client_info": {
+          "package_name": "udit.programmer.co.easypg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072990753694-67bgkeua2rte5kok08rl0ph8khpdllbe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcztheYAbz_o94qW3wKOBKLGpQ5pbHcUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072990753694-67bgkeua2rte5kok08rl0ph8khpdllbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

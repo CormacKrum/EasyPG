@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".SearchProfiles.PGProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/search_images_recycler_view_pg_profile"
+                android:layout_width="match_parent"
+                android:layout_height="280dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/search_pgName_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="PG NAME"
+                    android:textColor="@color/RoyalBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/search_pgFav_btn_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:src="@drawable/ic_baseline_favorite_border_24" />
+
+                <ImageButton
+                    android:id="@+id/search_pgShare_btn_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:src="@drawable/ic_baseline_share_24_01" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/search_pgState_pg_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="State"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/search_pgDistrict_pg_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="District"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/search_pgLift_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/DodgerBlue"
+                    android:drawableRight="@drawable/ic_baseline_sentiment_very_satisfied_24"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="LIFT"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/search_pgMess_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/DodgerBlue"
+                    android:drawableRight="@drawable/ic_baseline_sentiment_very_satisfied_24"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="MESS"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/search_pgType_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/DodgerBlue"
+                    android:gravity="center"
+                    android:text="BOYS"
+                    android:textAlignment="center"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Location"
+                android:textAllCaps="true"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_pgLocation_btn_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:backgroundTint="@color/LightBlue"
+                    android:drawableBottom="@drawable/ic_baseline_location_on_24"
+                    android:drawableTint="@color/RoyalBlue"
+                    android:text="Locate"
+                    android:padding="2dp"
+                    android:textColor="@color/Black"
+                    app:cornerRadius="15dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/search_pgAddress_pg_profile"
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Address"
+                    android:textColor="@color/DodgerBlue" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/search_pgCall_btn_pg_profile"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/BlueViolet"
+                android:drawableRight="@drawable/ic_baseline_contact_phone_24"
+                android:drawableTint="@color/White"
+                android:text="Want to Call"
+                android:textColor="@color/White" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/search_pgMessage_btn_pg_profile"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/BlueViolet"
+                android:drawableRight="@drawable/ic_baseline_chat_24"
+                android:drawableTint="@color/White"
+                android:text="Want to Message"
+                android:textColor="@color/White" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Rooms Description"
+                android:textAllCaps="true"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:scrollbars="vertical|horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/LightBlue">
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Room Type"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Number of Persons Per Room"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Total Number of Room"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Total Number of AC Room"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Total Number of Non AC Room"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Total Number of Available AC Room"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Total Number of Available Non AC Room"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of AC Rooms with Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of Non AC Rooms with Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of AC Rooms without Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of Non AC Rooms without Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_roomType1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_personsPerRoom1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfRooms1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfACRooms1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfNonACRooms1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableACRooms1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableNonACRooms1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithMess1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithMess1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of AC Rooms with Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithoutMess1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithoutMess1_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_roomType2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="2"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_personsPerRoom2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfRooms2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfACRooms2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfNonACRooms2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableACRooms2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableNonACRooms2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithMess2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithMess2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of AC Rooms with Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithoutMess2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithoutMess2_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_roomType3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="3"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_personsPerRoom3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfRooms3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfACRooms3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfNonACRooms3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableACRooms3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableNonACRooms3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithMess3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithMess3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of AC Rooms with Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithoutMess3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithoutMess3_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_roomType4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="4"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_personsPerRoom4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfRooms4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfACRooms4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfNonACRooms4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableACRooms4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableNonACRooms4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithMess4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithMess4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of AC Rooms with Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithoutMess4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithoutMess4_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_roomType5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="5"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_personsPerRoom5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="1"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfRooms5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfACRooms5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfNonACRooms5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableACRooms5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_noOfAvailableNonACRooms5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithMess5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithMess5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Rent of AC Rooms with Mess"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfACRoomsWithoutMess5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/search_rentOfNonACRoomsWithoutMess5_tv"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/RoyalBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Owner Information"
+                android:textAllCaps="true"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/search_intro_owner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/search_image_owner_pg_profile_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/White"
+                    android:src="@drawable/ic_baseline_perm_identity_24"
+                    app:civ_border_color="@color/RoyalBlue"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_toRightOf="@id/search_image_owner_pg_profile_tv"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/search_owner_name_pg_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textAlignment="center"
+                        android:textColor="@color/RoyalBlue"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/search_owner_email_pg_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="sonubpt99@gmail.com"
+                        android:textAlignment="center"
+                        android:textColor="@color/RoyalBlue"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/search_owner_gender_pg_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-thin"
+                        android:text="M"
+                        android:textAlignment="center"
+                        android:textColor="@color/RoyalBlue"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/search_owner_mobile_number_pg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Mobile Number"
+                android:textAlignment="center"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Address : "
+                android:textColor="@color/DodgerBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/search_owner_address_pg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Gali No 2 Punjabi Bagh"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/search_owner_state_pg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="State"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/search_owner_district_pg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="District"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/search_owner_pinCode_pg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="PinCode"
+                android:textColor="@color/RoyalBlue"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

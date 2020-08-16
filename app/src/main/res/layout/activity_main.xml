@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/smile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/White"
+        android:src="@mipmap/home" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="casual"
+        android:text="Customer Login"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Email"
+        android:textSize="17dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_tv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:boxStrokeColor="@color/DodgerBlue"
+        app:hintTextColor="@color/DodgerBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Email Here"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_input_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="PassWord"
+        android:textSize="17dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_tv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:boxStrokeColor="@color/DodgerBlue"
+        app:hintTextColor="@color/DodgerBlue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter password Here"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/password_input_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/DodgerBlue"
+        android:text="LogIn"
+        app:cornerRadius="30dp"
+        app:rippleColor="@color/LightBlue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="casual"
+        android:text="Customer Signup"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/DodgerBlue"
+        android:drawableLeft="@drawable/ic_baseline_add_circle_24"
+        android:text="Create an Account"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp" />
+
+    <LinearLayout
+        android:id="@+id/owner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_pg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Chocolate"
+            android:drawableLeft="@drawable/ic_baseline_home_24"
+            android:text="Add PG :) "
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            app:rippleColor="@color/BlanchedAlmond" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pg_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/Chocolate"
+            android:drawableRight="@drawable/abc_vector_test"
+            android:text="PG Login"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            app:rippleColor="@color/BlanchedAlmond" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bottom_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/Tomato"
+        android:fontFamily="serif-monospace"
+        android:text="Looking for a PG -> "
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

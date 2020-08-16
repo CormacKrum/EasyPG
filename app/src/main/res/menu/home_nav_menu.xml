@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation-view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bottom_navigation_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/bottom_navigation_search"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/bottom_navigation_profile"
+            android:icon="@drawable/ic_baseline_perm_identity_24"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="Favourites" />
+        <item
+            android:id="@+id/nav_web"
+            android:icon="@drawable/ic_baseline_web_asset_24"
+            android:title="Web" />
+        <item
+            android:id="@+id/nav_saved_msg"
+            android:icon="@drawable/ic_baseline_message_24"
+            android:title="Saved Messages" />
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/ic_baseline_person_add_24"
+            android:title="Invite Friends" />
+        <item
+            android:id="@+id/nav_user_guide"
+            android:icon="@drawable/ic_baseline_contact_support_24"
+            android:title="User Guide" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_baseline_feedback_24"
+            android:title="Feedback" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_baseline_contact_phone_24"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+    </group>
+
+</menu>

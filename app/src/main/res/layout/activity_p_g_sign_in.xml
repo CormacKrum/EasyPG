@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pg_signin_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivities.PGSignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25sp"
+            android:fontFamily="monospace"
+            android:text="CREDENTIALS"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/DodgerBlue"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Email"
+            android:textColor="@color/DodgerBlue"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxStrokeColor="@color/DodgerBlue"
+            app:hintTextColor="@color/DodgerBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pg_email_et_signin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter Email Here"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="PassWord"
+            android:textColor="@color/DodgerBlue"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:boxStrokeColor="@color/DodgerBlue"
+            app:hintTextColor="@color/DodgerBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pg_password_et_signin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter password Here"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pg_login_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/DodgerBlue"
+            android:fontFamily="serif-monospace"
+            android:text="LogIn"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            app:rippleColor="@color/BlueViolet" />
+
+    </LinearLayout>
+</LinearLayout>
