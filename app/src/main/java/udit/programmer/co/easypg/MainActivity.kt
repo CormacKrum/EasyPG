@@ -55,8 +55,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         val sharedPreferences = getSharedPreferences("1000", Context.MODE_PRIVATE)
-        email_input.setText(sharedPreferences.getString("email", "EMAIL"))
-        password_input.setText(sharedPreferences.getString("customerpassword", "PASSWORD"))
+        email_input.setText(sharedPreferences.getString("email", ""))
+        password_input.setText(sharedPreferences.getString("customerpassword", ""))
 
         login_btn.setOnClickListener {
             if (checkEmptyField()) {

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     tools:context=".LoginActivities.PGSignInActivity">
 
     <LinearLayout
@@ -20,12 +21,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="25sp"
-            android:fontFamily="monospace"
+            android:fontFamily="sans-serif-smallcaps"
             android:text="CREDENTIALS"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/DodgerBlue"
-            android:textSize="35dp"
+            android:textSize="32dp"
             android:textStyle="bold" />
 
         <TextView
@@ -91,10 +92,10 @@
             android:layout_margin="20dp"
             android:backgroundTint="@color/DodgerBlue"
             android:fontFamily="serif-monospace"
-            android:text="LogIn"
+            android:text="Log In"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:textStyle="bold"
             app:cornerRadius="30dp"
             app:rippleColor="@color/BlueViolet" />
